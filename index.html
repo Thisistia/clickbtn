@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <p></p>
+    <button>啟動</button>
+
+    <script>
+        $("button").click(function() {
+            d3.select("p").attr({}).text(random(1911, 2016));
+        });
+
+        function random(N, M) {
+            return Math.floor(Math.random() * (M - N + 1) + N);
+        }
+
+    </script>
+
+
+</body>
+
+</html>
